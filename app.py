@@ -1,9 +1,9 @@
 import streamlit as st
-from resume_utils import extract_text_from_pdf,preprocess,extract_skills,load_nlp_model
+from resume_utils import extract_text_from_pdf,preprocess,extract_skills,load_model
 from model_utils import get_similarity_score
 
 
-nlp = load_nlp_model()
+nlp = load_model()
 
 st.title("Resume vs Job Description Matcher")
 
