@@ -3,3 +3,4 @@ spacy
 scikit-learn
 PyMuPDF
 numpy
+--user spacy
