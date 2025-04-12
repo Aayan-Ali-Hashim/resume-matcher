@@ -68,5 +68,5 @@ This web application allows users to upload their resumes and job descriptions t
 Feel free to fork this repository, make improvements, and open pull requests. Contributions are always welcome!
 
 ## License
-This project is licensed under the MIT License - see the [License](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [License](LICENSE) file for details.
 
