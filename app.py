@@ -2,11 +2,10 @@ import streamlit as st
 from resume_utils import extract_text_from_pdf,preprocess,extract_skills,load_model
 from model_utils import get_similarity_score
 
-
-nlp = load_model()
-
 st.title("Resume vs Job Description Matcher")
 
+# Load model
+nlp = load_model()
 # File uploader
 resume_file = st.file_uploader("Upload your resume (PDF)", type=["pdf"])
 job_description = st.text_area("Paste your job description")

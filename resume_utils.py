@@ -3,16 +3,9 @@ import fitz
 import spacy
 import streamlit as st
 
-@st.cache_resource
 def load_model():
-    try:
-        return spacy.load("en_core_web_sm")
-    except OSError:
-        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
-        return spacy.load("en_core_web_sm")
-    
+    return spacy.load("en_core_web_sm")
 
-nlp = load_model()
 
 skills_list = ['python', 'sql', 'machine learning', 'excel', 'power bi', 'deep learning']
 
